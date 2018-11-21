@@ -1,0 +1,5 @@
+mutation updateTicket($id: ID!){
+  updateTicket(id:$id marked:true) {
+    id
+  }
+}

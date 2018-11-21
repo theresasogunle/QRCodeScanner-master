@@ -1,0 +1,9 @@
+query allTickets($id: ID!){
+  allTickets(filter:{id: $id marked: false rave:{status:"success"}} first: 1) {
+    id
+    firstname
+    lastname
+    email
+    phone
+  }
+}
